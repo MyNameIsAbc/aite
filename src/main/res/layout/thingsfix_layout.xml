@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/iv_back_mythings"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/toolbar_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的订单"
+            android:textColor="#ffff8244"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/toolbar_txt"
+            android:layout_toRightOf="@+id/toolbar_txt"
+            app:srcCompat="@drawable/arrow_down_yellow" />
+
+        <ImageView
+            android:id="@+id/seacher"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/choice"
+            android:layout_toLeftOf="@+id/choice"
+            android:padding="10dp"
+            app:srcCompat="@drawable/seacher" />
+
+        <ImageView
+            android:id="@+id/choice"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/choice" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/choice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/choice_timer_son"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/choice_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="筛选日期"
+                android:textColor="#ffff8244"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                app:srcCompat="@drawable/arrow_down_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choice_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/choice_area_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="筛选地区"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                app:srcCompat="@drawable/arrow_down_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/choice_worker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/choice_worker_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/choiceworker"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                app:srcCompat="@drawable/arrow_down_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/glay" />
+
+    <LinearLayout
+        android:id="@+id/date_choice_center"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选择日期"
+            android:textColor="#ffff8244"
+            android:textSize="14sp" />
+
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/glay" />
+
+        <TextView
+            android:id="@+id/get_choice_time_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2019-05-20"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/glay" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/thingsfix_tabMode"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:tabIndicatorColor="@color/yelllow"
+        app:tabSelectedTextColor="@color/yelllow"
+        app:tabTextAppearance="@style/MyTabText"
+        app:tabTextColor="@color/glay">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/thingsfix_tab1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入库" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/thingsfix_tab2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出库" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/thingfix_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/things_fix_recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">家南仓库</string>
+
+
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限 得到手机账户信息</string>
+
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限 读取电话列表</string>
+
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限 打电话权限</string>
+
+    <string name="permission_camera_hint">没有使用摄像头权限，无法开启这个功能，请开启权限 摄像权限</string>
+
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限 获得精确位置权限</string>
+
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限 获得大概位置权限</string>
+
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限 读取外部存储权限</string>
+
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限 写入外部存储权限</string>
+
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限  录制音频权限</string>
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+
+        <item>@string/permission_get_accounts_hint</item>
+
+        <item>@string/permission_read_phone_hint</item>
+
+        <item>@string/permission_call_phone_hint</item>
+
+        <item>@string/permission_camera_hint</item>
+
+        <item>@string/permission_access_fine_location_hint</item>
+
+        <item>@string/permission_access_coarse_location_hint</item>
+
+        <item>@string/permission_read_external_hint</item>
+
+        <item>@string/permission_white_external_hint</item>
+
+    </string-array>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+
+    <string name="shopitem_number">包裹号 : %s</string>
+    <string name="bigitem_number">大包裹号 : %s</string>
+
+    <string name="shopitem_go_timer">入库时间 : %s</string>
+    <string name="shopitem_out_timer">出库时间 : %s</string>
+    <string name="bookitem_go_timer">下单时间 : %s</string>
+
+    <string name="shop_address">商家地址 : %s</string>
+
+    <string name="shop_phone_number">商家电话 : %s</string>
+
+    <string name="shopitem_adrress">送货地址 : %s</string>
+    <string name="shopitem_man">入库员 : %s</string>
+    <string name="shopitemout_man">出库员 : %s</string>
+    <string name="no">取消</string>
+    <string name="ok">确定</string>
+    <string name="sendworker">配送员 ：%s</string>
+
+    <string name="gohouseworker">入库员</string>
+    <string name="outhouseworker">出库员</string>
+    <string name="changekeybartxt">修改密码</string>
+    <string name="findkeytxtbar">找回密码</string>
+    <string name="fixkeyfisthint">新密码，6到12位数字与字母</string>
+    <string name="fixkeysencondhint">确认新密码</string>
+    <string name="surekeychange">确认修改</string>
+    <string name="leaveworker">离职</string>
+    <string name="atworker">在职</string>
+    <string name="thingproblembartitle">包裹异常</string>
+
+    <string name="thingcarbartitle">订单打包</string>
+    <string name="overthingscar">已打包</string>
+    <string name="nothingstxt">待打包</string>
+    <string name="all">全部</string>
+    <string name="allselect">全选</string>
+    <string name="add">添加</string>
+    <string name="fixthing">打包</string>
+    <string name="fixthings_sucesstxt">包裹打包成功</string>
+    <string name="settingtxt">设置</string>
+    <string name="userfixtxt">账号设置</string>
+    <string name="usernumber">账号</string>
+    <string name="userkey">登录密码</string>
+    <string name="oldkey">旧密码</string>
+    <string name="versionnumber">当前版本:%s</string>
+    <string name="exitcurroutuser">退出登录</string>
+    <string name="findingcarworker">正在匹配配送员...</string>
+    <string name="thingsallmsg">订单详情</string>
+    <string name="thingscarworker">配送员: %s</string>
+    <string name="iphonenumber">电话号码 %s</string>
+    <string name="startthingcartxtbar">已出库列表</string>
+    <string name="nothingscartxt">待配送</string>
+    <string name="getthingstxt">待取件</string>
+    <string name="ungetthingstxt">待取件</string>
+    <string name="thingscartxt">已配送</string>
+    <string name="choiceworker">筛选员工</string>
+    <string name="findkey">找回密码</string>
+    <string name="send">发送</string>
+    <string name="login">登录</string>
+    <string name="jump">跳过</string>
+    <string name="overouthome">已出库</string>
+    <string name="overgohome">已入库</string>
+    <string name="unseemsg">屏蔽消息</string>
+    <string name="my">我的</string>
+    <string name="sure_add">确认添加</string>
+    <string name="sure_fix">确认修改</string>
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/iv_back_thingbook"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/thingcarbartitle"
+            android:textColor="@color/yelllow"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/glay" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/thingscar_tabMode"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:tabIndicatorColor="@color/yelllow"
+        app:tabSelectedTextColor="@color/yelllow"
+        app:tabTextAppearance="@style/MyTabText"
+        app:tabTextColor="@color/glay">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/thingscar_tab1_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nothingstxt" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/thingscar_tab2_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/overthingscar" />
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:shadowColor="@color/yelllow"
+                android:text="@string/allselect" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/thingscar_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+
+
+</LinearLayout>

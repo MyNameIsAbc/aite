@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/toolbar_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="包裹查询"
+            android:textColor="#ffff8244"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_background_glay">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:paddingLeft="4dp"
+                android:src="@drawable/seacher" />
+
+            <EditText
+                android:id="@+id/seach_edit"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入包裹号"
+                android:paddingLeft="2dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/sure_seach_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seacher_recy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:background="@null"
+        android:text="清空所有历史" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

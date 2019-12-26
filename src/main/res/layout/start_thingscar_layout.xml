@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/start_iv_back"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/startthingcartxtbar"
+            android:textColor="@color/yelllow"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/glay"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/start_thingscar_tabMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:tabIndicatorColor="@color/yelllow"
+        app:tabSelectedTextColor="@color/yelllow"
+        app:tabTextAppearance="@style/MyTabText"
+        app:tabTextColor="@color/glay">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/start_thingscar_tab1_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nothingscartxt" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/start_thingscar_tab2_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ungetthingstxt" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/start_thingscar_tab3_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/thingscartxt" />
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/start_thingscar_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

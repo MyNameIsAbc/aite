@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/noglay"
+    android:padding="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_background_white">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/glay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/check"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/thing_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/shopitem_number"
+                android:textColor="#ff333333"
+                android:textIsSelectable="true"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/thingnow"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/overouthome" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/delete" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/glay" />
+
+        <TextView
+            android:id="@+id/gohouse_time"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingLeft="30dp"
+            android:text="@string/shopitem_go_timer"
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/gohome_address"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingLeft="30dp"
+            android:text="@string/shopitem_adrress"
+            android:textColor="#ff333333"
+            android:textIsSelectable="true"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/noglay" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

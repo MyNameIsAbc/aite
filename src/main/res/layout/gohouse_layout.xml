@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--Empty提示图-->
+            <ImageView
+                android:id="@+id/empty_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:contentDescription="@null"
+
+                android:src="@drawable/empty"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/glay"
+                android:textSize="18sp"
+                android:layout_centerInParent="true" />
+
+    <com.example.jianancangku.view.RecyView
+        android:background="@color/noglay"
+        android:id="@+id/thingbook_recy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/oranger"
+            android:text="@string/add"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/makehouse_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yelllow"
+            android:text="@string/fixthing"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
+
